@@ -1,0 +1,10 @@
+{
+  "prettier.printWidth": 300,
+  "prettier.endOfLine": "lf",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.semi": false,
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "vs-code-prettier-eslint.prettierLast": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}

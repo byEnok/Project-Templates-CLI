@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: var(--background);
+  outline: none;
+  background: var(--background);
+  color: var(--textColor);
+} */
+
+
+@layer base {
+  :root {
+    box-sizing: border-box;
+
+    /* BLACK & WHITE */
+
+    --background-opposite: hsl(0, 0%, 15%);
+    --background: hsl(0 0% 90%);
+    /* --background-darker: hsl(30, 2%, 54%); */
+    /* --background-darker: hsl(36, 4%, 74%); */
+    --background-darker: hsl(0, 0%, 80%);
+    --primary: hsl(0, 0%, 5%);
+    --accentOne: hsl(60, 1%, 35%);
+    --accentTwo: hsl(0, 0%, 15%);
+    --border-focus: hsl(216, 100%, 51%);
+
+    /* --background: hsl(50 0% 95%);
+    --background-darker: hsl(50, 0%, 85%);
+    --primary:   #6a99f1; 
+    --secondary:   #465c84; 
+    --accentOne:  #2b68d9; 
+    --accentTwo:   #272b33; 
+   */
+
+    /* Text Color */
+    --textColor: hsl(0, 0%, 21%);
+    --textHover: hsl(0, 0%, 0%);
+    /* BG Color */
+
+    /* Border Colors */
+    /* --buttonBorder: hsl(50 0% 20%); */
+    /* --border: hsl(48, 25%, 12%); */
+    /* Input is togglemode border color */
+    /* --input: hsl(214.3 31.8% 91.4%); */
+
+    /* ArrowButton Border */
+    --ArrowButtonBorder: hsl(0, 0%, 7%);
+    /* Gradient Colors */
+    --ArrowGradientColorEnd: hsl(0, 0%, 75%);
+    --containerGradientColorEnd: hsl(0, 2%, 90%);
+
+    /* Shadcn Component Colors */
+    --warning: hsl(38 92% 50%);
+    --warning-foreground: hsl(48 96% 89%);
+
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222.2 84% 4.9%);
+    --neutral: hsl(0, 0%, 95%);
+
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(222.2 84% 4.9%);
+
+    --primary: hsl(222.2 47.4% 11.2%);
+    --primary-foreground: hsl(210 40% 98%);
+
+    --secondary: hsl(210 40% 96.1%);
+    --secondary-foreground: hsl(222.2 47.4% 11.2%);
+
+    --muted: hsl(210 40% 96.1%);
+    --muted-foreground: hsl(215.4 16.3% 46.9%);
+
+    --accent: hsl(50 0% 88%);
+    --accent-foreground: hsl(62, 47%, 11%);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(210 40% 98%);
+
+    /* Ring er til noe spesielt i et component tror jeg */
+    /* --ring: hsl(222.2 84% 4.9%); */
+  }
+  /* -------------------------  END OF LIGHT MODE CLASS ------------------------- */
+
+  /* -------------------------------- START OF DARK MODE ---------------------------------- */
+
+  .dark {
+    box-sizing: border-box;
+
+    --background-opposite: hsl(50 0% 90%);
+    /* --background: hsl(0, 0%, 15%); */
+    --background: hsl(249, 11%, 12%);
+    --background-darker: hsl(0, 0%, 5%);
+    --primary: hsl(60, 1%, 35%);
+    --accentOne: hsl(0, 0%, 20%);
+    /* --accentOne: hsl(30, 2%, 54%); */
+    --accentTwo: hsl(36, 4%, 74%);
+    /* BLACK AND WHITE/GREY */
+
+    --border-focus: hsl(49, 83%, 42%);
+
+    /* text color */
+    --textColor: hsl(0 0% 80%);
+    --textHover: hsl(0, 0%, 100%);
+
+
+    /* Project Color themes */
+
+    /* Cotton Candy color theme
+    /* --theme-dark-green-blue: #4b899b;
+    --theme-blurple-solid: #4A5DD9;
+    --theme-blue-blue: #4A8AD9;
+    --theme-green-blue: #4AD9CC;
+    --theme-purple: #644AD9;
+    --theme-light-blue: #92B2D9;
+    --nice-light-gray: hsl(0, 0%, 65%);
+    --login-button-v2: rgb(100,74,217); */
+
+    /* New colors for project */
+    /* --accentOne:  #3b0233;  */
+    /* --darkBg:     #2e313d; */
+    /* --strongBlue:   #6a99f1;  */
+    /* --mildBlue:   #97b7f2;  */
+    /* --accentTwo:   #a48156;  */
+
+    /* 1 */
+    /* BLUE AND GOLD */
+    /* --background: #2e313d;
+    --background-darker: #2c2f33;
+    --primary:   #6a99f1; 
+    --secondary:   #97b7f2; 
+    --accentOne:  #3b0233; 
+    --accentTwo:   #a48156;  */
+
+    /* 2 */
+    /* BLUE ALL AROUND */
+    /* --background: #3e4859;
+    --background-darker: #2c2f33;
+    --primary:   #2b68d9; 
+    --secondary:   #465c84; 
+    --accentOne:   #6a99f1; 
+    --accentTwo:   #6a99f1;  */
+
+    /* --primary:   #6a99f1;  */
+    /* --accentOne:  #2b68d9;  */
+    /* --accentTwo:  #2b68d9;  */
+    /* --accentTwo:   #272b33;  */
+    /* --accentTwo:   #465c84;  */
+    /* --background: #2e313d; */
+
+    /* PURPLE & BLUE */
+    /* --background: #3c4973;
+    --background-darker: #282c40;
+    --primary:   #6f92bf; 
+    --accentTwo:  #4946a6; 
+    --accentOne:   #8a7ed9;  */
+
+    /* Project Color themes */
+    /* --------------------------- */
+
+    /* Border colors */
+    /* --buttonBorder: #2b68d9; */
+    /* --buttonBorder: #272b33; */
+    /* --border: hsl(180 35% 15%); */
+    /* input is togglemode border color */
+    --input: hsl(80 20% 15%);
+
+    /* ArrowButton border */
+    --ArrowButtonBorder: hsl(140 25% 20%);
+    /* Gradient Colors */
+    --ArrowGradientColorEnd: hsl(140 25% 25%);
+    --containerGradientColorEnd: hsl(140 25% 20%);
+
+    /* Shadcn Component Colors */
+    --warning: hsl(48 96% 89%);
+    --warning-foreground: hsl(38 92% 50%);
+
+    --card: hsl(180 15% 5%);
+    --card-foreground: hsl(210 40% 98%);
+    --neutral: hsl(180 15% 8%);
+
+    --popover: hsl(222.2 84% 4.9%);
+    --popover-foreground: hsl(210 40% 98%);
+
+    --primary: hsl(210 40% 98%);
+    --primary-foreground: hsl(222.2 47.4% 11.2%);
+
+    --secondary: hsl(217.2 32.6% 17.5%);
+    --secondary-foreground: hsl(210 40% 98%);
+
+    --muted: hsl(217.2 32.6% 17.5%);
+    --muted-foreground: hsl(215 20.2% 65.1%);
+
+    --accent: hsla(145, 69%, 15%, 0.2);
+    --accent-foreground: hsl(210 40% 98%);
+
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(210 40% 98%);
+  }
+
+
+  input, button {
+    line-height: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  input:focus{
+    outline: 0;
+  }
+  input {
+      background: unset;
+    }
+  button:hover {
+    background-color: var(--background-darker);
+  }
+
+/* Newtons Craddle - Loading Screen */
+  .newtons-cradle {
+    --uib-size: 50px;
+    --uib-speed: 1.2s;
+    --uib-color: #474554;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: var(--uib-size); */
+    /* height: var(--uib-size); */
+  }
+
+  .newtons-cradle__dot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    transform-origin: center top;
+  }
+
+  .newtons-cradle__dot::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+  }
+
+  .newtons-cradle__dot:first-child {
+    animation: swing var(--uib-speed) linear infinite;
+  }
+
+  .newtons-cradle__dot:last-child {
+    animation: swing2 var(--uib-speed) linear infinite;
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+    }
+
+    25% {
+      transform: rotate(70deg);
+      animation-timing-function: ease-in;
+    }
+
+    50% {
+      transform: rotate(0deg);
+      animation-timing-function: linear;
+    }
+  }
+
+  @keyframes swing2 {
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: linear;
+    }
+
+    50% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+    }
+
+    75% {
+      transform: rotate(-70deg);
+      animation-timing-function: ease-in;
+    }
+  }
+}
