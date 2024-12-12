@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --bg-color: #f6f6f6;
+  --foreground-color: #e6f11b;
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color-: #ffffff;
+  --toggle-bg: #747373;
+  --toggle-fg: #242424;
+  /* --toggle-fg: #ffffff; */
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: large;
+
+  /* color-scheme: light dark; */
+  /* color: hsl(0, 0%, 95%); */
+  /* background-color: #242424; */
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+[data-theme='dark'] {
+  --bg-color: #242424;
+  --foreground-color: #00fffb;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #0a0a0a;
+  /* --toggle-bg: #f6f6f6; */
+  --toggle-bg: #dbdada;
+  /* --toggle-fg: #171616; */
+  --toggle-fg: #242424;
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+img {
+  text-align: center;
+  margin: 5px 0 5px 0;
+  color: var(--primary-text-color);
+}
+
+/* FIREFOX FORCES OUTLINE BORDER COLOR ON INPUT */
+input:focus {
+  outline: 0;
+  /* some people use shadows too */
+  box-shadow: none;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
