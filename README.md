@@ -19,10 +19,11 @@
 # **Installation**
 
 ## **This section provides two setup intructions:**
-### **A: Short & Concise option for advanced users.**
+### **A: Short & concise option for advanced users.**
+### **B: Longer & more detailed option for beginners.**
 
 &nbsp; 
- # **Option A - Advanced Instructions (Short & Concise)**
+ # **Option A - Advanced**
 
   ### **1. Clone the Repository and navigate to it**
       git clone <repo-url> && cd <repo-folder>
@@ -42,7 +43,7 @@
 &nbsp; 
 
 &nbsp; 
-# **Option B - Beginner Intructions (Long & Detailed)**
+# **Option B - Beginner**
 
 ### **Simply follow the provided instructions to get started!**
  
