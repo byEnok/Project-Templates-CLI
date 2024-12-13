@@ -5,8 +5,12 @@
    <!-- **Significant changes and improvements have been made to better align the tool with my personal workflow.**  -->
 
 &nbsp;  
+## **Below is a quick preview of the Project-Templates-CLI in action, demonstrating how easy it is to select a project template and set it up in your terminal.**
+![CLI-ShowCase1](https://github.com/user-attachments/assets/e76d572d-791f-444f-909c-c56c7227bd2c)
+![CLI-ShowCase2](https://github.com/user-attachments/assets/93baa08c-3a98-4ac9-8452-8ba2a3f12677)
 
 # **Key Updates and Improvements**
+
 
 ## **1. Updated Prompts Using Modern Inquirer Promises**
 
