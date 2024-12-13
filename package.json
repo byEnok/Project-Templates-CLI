@@ -7,19 +7,25 @@
   "bin": {
     "new-project": "./index.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leoroese/template-cli.git"
+    "url": "git+https://github.com/byEnok/Project-Templates-CLI.git"
   },
-  "author": "Leonardo Roese",
-  "license": "ISC",
+  "author": "Simon Enoksen",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leoroese/template-cli/issues"
+    "url": "https://github.com/byEnok/Project-Templates-CLI/issues"
   },
-  "homepage": "https://github.com/leoroese/template-cli#readme",
+  "keywords": [
+    "CLI",
+    "template",
+    "project setup",
+    "node tool"
+  ],
+  "homepage": "https://github.com/byEnok/Project-Templates-CLI#readme",
+  "scripts": {
+    "test": "node ./index.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "eslint": "^7.22.0",
@@ -30,6 +36,7 @@
     "prettier": "^2.8.8"
   },
   "dependencies": {
-    "@inquirer/prompts": "^6.0.1"
+    "@inquirer/prompts": "^6.0.1",
+    "@types/node": "^22.7.4"
   }
 }

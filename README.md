@@ -1,7 +1,7 @@
 # **Project-Templates-CLI**
 
 ## **This project is a modernized and enhanced version of @leoroese's 'template-cli', a CLI tool for generating project templates.**
-### **See his original project here: https://github.com/leoroese/template-cli/tree/master/templates**
+### **See his original project here: https://github.com/leoroese/template-cli**
    <!-- **Significant changes and improvements have been made to better align the tool with my personal workflow.**  -->
 
 &nbsp;  

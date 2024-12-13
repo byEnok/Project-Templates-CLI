@@ -28,6 +28,8 @@ async function getProjectInfo() {
     },
   });
 
+  console.log('\nSetting up project...\n'); // Add this message here
+
   return { projectChoice, projectName };
 }
 
@@ -46,9 +48,14 @@ async function run() {
 
   console.log(`\nProject setup complete!`);
   console.log('\nNext steps:');
-  console.log(`1. Navigate to your project folder:\n cd ${projectName}`);
-  console.log('2. Run "npm install" to install dependencies');
-  console.log('3. Run "npm run dev" or "npx next dev" to start the development server');
+  if (projectName === ".") {
+    console.log('1. Run "npm install" to install dependencies');
+    console.log('2. Run "npm run dev" or "npx next dev" to start the development server');  
+  } else {
+    console.log(`1. Navigate to your project folder: cd ${projectName}`);
+    console.log('2. Run "npm install" to install dependencies');
+    console.log('3. Run "npm run dev" or "npx next dev" to start the development server');
+  }
 }
 
 run();
