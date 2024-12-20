@@ -7,12 +7,11 @@
 &nbsp;  
 ## **Below is a quick preview of the Project-Templates-CLI in action, demonstrating how easy it is to select a project template and set it up in your terminal.**
 ### 1. Initialize a New Project with a Simple Command
-![CLI-ShowCase1 (Small)](https://github.com/user-attachments/assets/3909a1c2-6ca2-423a-b0b5-cf8247230390)
+![1](https://github.com/user-attachments/assets/2e1cfebe-bcaa-480b-8dc8-ad397b81bf11)
+
 &nbsp; 
 ### 2. Choose from a Variety of Project Templates
-![CLI-ShowCase2 (Small)](https://github.com/user-attachments/assets/a7dd7926-6ee8-475c-952f-e66016c1381c)
-
-
+![2](https://github.com/user-attachments/assets/eaf6c00c-896e-4bec-8416-9e217ee35a99)
 &nbsp; 
 
 &nbsp;  
