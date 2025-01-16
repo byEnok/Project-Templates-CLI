@@ -1,22 +1,9 @@
 import './globals.css'
 import './icons.css'
-import localFont from 'next/font/local'
 import { ThemeProvider } from '@/components/services/Theme-Provider'
 import { RobotoFont, Lobster } from './fonts/fonts'
 import { Suspense } from 'react'
 import Loading from './Loading'
-
-
-// const geistSans = localFont({
-//   src: './fonts/GeistVF.woff',
-//   variable: '--font-geist-sans',
-//   weight: '100 900',
-// })
-// const geistMono = localFont({
-//   src: './fonts/GeistMonoVF.woff',
-//   variable: '--font-geist-mono',
-//   weight: '100 900',
-// })
 
 export const metadata = {
   title: 'Create Next App',
@@ -25,12 +12,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={` antialiased min-h-screen flex flex-col ${RobotoFont.variable} ${Lobster.variable} ${geistSans.variable} ${geistMono.variable} ${RobotoFont.variable} ${Lobster.variable} `}>
-        <ThemeProvider attribute="class" defaultTheme={'dark'} disableTransitionOnChange={true}>
-          <Suspense fallback={<Loading />} >
-          {children}
-          </Suspense>
+    <html lang='en'>
+      <body className={`${RobotoFont.variable} ${Lobster.variable}  antialiased min-h-screen flex flex-col`}>
+        <ThemeProvider attribute='class' defaultTheme={'dark'} disableTransitionOnChange={true}>
+          <Suspense fallback={<Loading />}>{children}</Suspense>
         </ThemeProvider>
       </body>
     </html>

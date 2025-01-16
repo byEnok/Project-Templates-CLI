@@ -12,6 +12,3 @@ export const RobotoFont = Roboto({
   subsets: ['latin'],
   variable: '--roboto',
 })
-
-
-
