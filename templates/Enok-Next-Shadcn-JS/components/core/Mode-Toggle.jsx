@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from 'react'
 import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useState } from 'react'
@@ -11,16 +10,13 @@ export function ModeToggle() {
 
   return (
     <>
-      <Button className="h-12 w-12 z-50 " onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))} variant="outline" size={'iconXL'}>
+      <Button className="h-12 w-12 z-50 " onClick={ () => setTheme(theme === 'dark' ? 'light' : 'dark')} variant="outline" size={'iconXL'}>
         {theme === 'dark' ? (
-          <div className="">
-            <Sun className={`hover:rotate-180 transition-transform duration-300 ease-in-out`} />
-          </div>
-        ) : (
-          <div className="">
-            <Moon className={` hover:rotate-45 transition-transform duration-500 ease-in-out `} />
-          </div>
-        )}
+          <Sun className={`hover:rotate-180 transition-transform duration-300 ease-in-out`} />
+          ) : (
+          <Moon className={` hover:rotate-45 transition-transform duration-500 ease-in-out `} />
+          )
+        }
       </Button>
     </>
   )

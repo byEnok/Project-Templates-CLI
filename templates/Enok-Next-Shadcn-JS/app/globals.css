@@ -2,23 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-image: var(--background);
-  outline: none;
-  background: var(--background);
-  color: var(--textColor);
-} */
-
 
 @layer base {
-  :root {
+  * {
+    @apply border-border;
     box-sizing: border-box;
-
+  }
+  *, *::before, *::after {
+    box-sizing: inherit; /* Ensures pseudo-elements also inherit */
+  }
+  body {
+    @apply bg-background;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+  :root {
     /* BLACK & WHITE */
-
     --background-opposite: hsl(0, 0%, 15%);
     --background: hsl(0 0% 90%);
     /* --background-darker: hsl(30, 2%, 54%); */
@@ -88,12 +88,12 @@
   /* -------------------------------- START OF DARK MODE ---------------------------------- */
 
   .dark {
-    box-sizing: border-box;
-
+    /* BLACK & WHITE */
     --background-opposite: hsl(50 0% 90%);
-    /* --background: hsl(0, 0%, 15%); */
     --background: hsl(249, 11%, 12%);
+    /* --background: hsl(0, 0%, 15%); */
     --background-darker: hsl(0, 0%, 5%);
+
     --primary: hsl(60, 1%, 35%);
     --accentOne: hsl(0, 0%, 20%);
     /* --accentOne: hsl(30, 2%, 54%); */

@@ -14,8 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${RobotoFont.variable} ${Lobster.variable}  antialiased min-h-screen flex flex-col`}>
-        <ThemeProvider attribute='class' defaultTheme={'dark'} disableTransitionOnChange={true}>
-          <Suspense fallback={<Loading />}>{children}</Suspense>
+        <ThemeProvider attribute='class' defaultTheme={'system'} enableSystem={true} disableTransitionOnChange={false}>
+          <Suspense fallback={<Loading />}>
+            {children}
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>
