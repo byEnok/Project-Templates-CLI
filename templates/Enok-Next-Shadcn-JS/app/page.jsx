@@ -7,7 +7,7 @@ export default function Home() {
   const {theme, systemTheme} = useTheme()
 
   return (
-    <div className="flex items-center justify-center bg-background">
+    <div className="flex flex-col justify-center bg-background">
       <Navbar />
     </div>
   )

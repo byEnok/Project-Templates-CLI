@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${RobotoFont.variable} ${Lobster.variable}  antialiased min-h-screen flex flex-col`}>
+      <body className={`${RobotoFont.variable} ${Lobster.variable} antialiased min-h-screen overflow-x-hidden`}>
         <ThemeProvider attribute='class' defaultTheme={'system'} enableSystem={true} disableTransitionOnChange={false}>
           <Suspense fallback={<Loading />}>
             {children}

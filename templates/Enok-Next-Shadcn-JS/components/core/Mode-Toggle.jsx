@@ -10,7 +10,7 @@ export function ModeToggle() {
 
   return (
     <>
-      <Button className="h-12 w-12 z-50 " onClick={ () => setTheme(theme === 'dark' ? 'light' : 'dark')} variant="outline" size={'iconXL'}>
+      <Button className="h-10 w-10 md:h-12 md:w-12 z-50 " onClick={ () => setTheme(theme === 'dark' ? 'light' : 'dark')} variant="outline" size={'iconXL'}>
         {theme === 'dark' ? (
           <Sun className={`hover:rotate-180 transition-transform duration-300 ease-in-out`} />
           ) : (
