@@ -1,4 +1,4 @@
-# **Project-Templates-CLI**
+# Project-Templates-CLI
 
 `Node CLI tool to browse and generate custom project templates with your own command`
 
@@ -6,7 +6,7 @@ This project is a modernized and enhanced version of @leoroese's 'template-cli',
 See his original project here: https://github.com/leoroese/template-cli
 
 &nbsp;  
-## **Below is a quick preview of the Project-Templates-CLI in action, demonstrating how easy it is to select a project template and set it up in your terminal.**
+## Below is a quick preview of the Project-Templates-CLI in action, demonstrating how easy it is to select a project template and set it up in your terminal.
 ### 1. Initialize a New Project with a Simple Command
 ![1](https://github.com/user-attachments/assets/2e1cfebe-bcaa-480b-8dc8-ad397b81bf11)
 
@@ -16,36 +16,36 @@ See his original project here: https://github.com/leoroese/template-cli
 &nbsp; 
 
 &nbsp;  
-# **Installation**
+# Installation
 
 Two setup options:
-- A: Short & concise option for advanced users.
-- B: Longer & more detailed option for beginners.
+- A: Short & concise option for advanced users
+- B: Longer & more detailed option for beginners  -  [Jump to B setup](#Option-B---Beginner)
 
 &nbsp; 
- # **Option A - Advanced**
+ # Option A - Advanced
 
-  ### **1. Clone the Repository and navigate to it**
+  ### 1. Clone the Repository and navigate to it
       git clone <repo-url> && cd <repo-folder>
   
-  ## **2. Add the bin entry to package.json if not already present**
+  ## 2. Add the bin entry to package.json if not already present
       "bin": { "new-project": "./index.js" }
 
-  ## **3. Link the CLI globally**
+  ## 3. Link the CLI globally
       npm link
 
-  ## **4. Test the setup from any directory**
+  ## 4. Test the setup from any directory
       new-project
 
-  ## **5. (Optional) Unlink the tool globally if no longer needed**
+  ## 5. (Optional) Unlink the tool globally if no longer needed
       npm unlink -g
 
 &nbsp; 
 
 &nbsp; 
-# **Option B - Beginner**
+# Option B - Beginner
 
-### **Simply follow the provided instructions to get started!**
+### Simply follow the provided instructions to get started!
  
   | Step                          |Description                                                                  |
   |-------------------------------|-----------------------------------------------------------------------------|
@@ -76,31 +76,31 @@ Two setup options:
 ---
 
 &nbsp;  
-# **Key Updates and Improvements**
+# Key Updates and Improvements
 
-## **1. Updated Prompts Using Modern Inquirer Library**
+## 1. Updated Prompts Using Modern Inquirer Library
   - Replaced the older inquirer syntax for handling prompts with the latest asynchronous structure.
   - Added validation for project names to ensure they include only letters, numbers, underscores, and dashes.
   - Improved user input flow by separating and organizing prompts into cleaner, modular functions.
 
-## **2. Support for Current Directory Installation**
+## 2. Support for Current Directory Installation
   - Added support for using . as the project name, allowing template installation directly into the current directory without creating a new folder.
  
-## **3. Enhanced Directory and File Handling - Improved file creation logic**
+## 3. Enhanced Directory and File Handling - Improved file creation logic
   - Recursive file creation ensures directory structures from templates are preserved.
   - Updated the file system functions (fs) to include better error handling and optimized operations.
  
-## **4. Cleaner Code and Modularity**
+## 4. Cleaner Code and Modularity
    - Refactored functions like createDirectoryContents into more reusable and maintainable components.
    - Simplified folder path resolution using modern import.meta.url and path utilities for consistent cross-platform behavior.
  
-## **5. Improved User Experience**
+## 5. Improved User Experience
   - Included better logging for success messages and next steps:
   - Guides users on running npm install and starting the development server after project creation.
   - Made prompts intuitive and developer-friendly for a smoother experience.
 
 &nbsp;  
-## **Folder Structure**
+## Folder Structure
 ```
 main
 ├── templates/
@@ -118,7 +118,7 @@ main
 └── yarn.lock
 ```
 &nbsp;  
-## **My top 3 VSC Extensions**
+## My top 3 VSC Extensions
 
   - **Vim** - Improve ergonomics and efficiency
 
@@ -127,9 +127,9 @@ main
   - **Indent-Rainbow** - Improve visibility
 
 &nbsp;  
-## **Contributing**
+## Contributing
 ### If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request!
 
 &nbsp;  
-## **Acknowledgments:**
+## Acknowledgments:
 ### A big thanks to @leoroese for creating the original "template-cli" project, which provided an excellent foundation and inspiration for when I wanted my very own CLI tool to simplify starting new projects.
