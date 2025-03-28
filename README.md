@@ -1,8 +1,9 @@
 # **Project-Templates-CLI**
 
-## **This project is a modernized and enhanced version of @leoroese's 'template-cli', a CLI tool for generating project templates.**
-### **See his original project here: https://github.com/leoroese/template-cli**
-   <!-- **Significant changes and improvements have been made to better align the tool with my personal workflow.**  -->
+`Node CLI tool to browse and generate custom project templates with your own command`
+
+This project is a modernized and enhanced version of @leoroese's 'template-cli', a CLI tool for generating project templates.
+See his original project here: https://github.com/leoroese/template-cli
 
 &nbsp;  
 ## **Below is a quick preview of the Project-Templates-CLI in action, demonstrating how easy it is to select a project template and set it up in your terminal.**
@@ -17,9 +18,9 @@
 &nbsp;  
 # **Installation**
 
-## **This section provides two setup intructions:**
-### **A: Short & concise option for advanced users.**
-### **B: Longer & more detailed option for beginners.**
+Two setup options:
+- A: Short & concise option for advanced users.
+- B: Longer & more detailed option for beginners.
 
 &nbsp; 
  # **Option A - Advanced**
@@ -72,6 +73,7 @@
   |                                       |   `npm unlink -g`                                                   |
   |   |    **This safely removes the global reference but keeps the local project intact.**                     |
 &nbsp; 
+---
 
 &nbsp;  
 # **Key Updates and Improvements**
